@@ -1,6 +1,4 @@
-# Flask application served via Caddy webserver using Docker
-
-### An example of using [Flask](https://flask.palletsprojects.com) (a Python web microframework) and [Caddy](https://caddyserver.com/) (a powerful, enterprise-ready, open source web server with automatic HTTPS) using [docker-compose](https://docs.docker.com/compose/)!
+## An example of [Flask](https://flask.palletsprojects.com) (a Python web microframework) and [Caddy](https://caddyserver.com/) (a powerful, enterprise-ready, open source web server with automatic HTTPS) using [docker-compose](https://docs.docker.com/compose/)!
 
 ---
 
