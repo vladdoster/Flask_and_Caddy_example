@@ -1,32 +1,25 @@
-## An example of [Flask](https://flask.palletsprojects.com) (a Python web microframework) and [Caddy](https://caddyserver.com/) (a powerful, enterprise-ready, open source web server with automatic HTTPS) using [docker-compose](https://docs.docker.com/compose/)!
+# Flask v2.0 application w/ Caddy v2.0 reverse proxy
 
----
+A docker compose file to stand up a Flask v2.0
+application behind a Caddy v2.0 reverse proxy. 
+
+Caddy is great because:
+
+- automatic HTTPS 
+- performant in containers because it has no dependencies, not even libc
+- easy configuration
 
 ## Usage
 
-### Local
+First, spin up the Flask app and Caddy:
 
-1. Generate local HTTPS certificates
-
-```
-mkcert -install flask.localhost
+```bash
+docker compose up --build
 ```
 
-2. Spin up application
+Next, point your browser to
 
-```
-docker-compose -f local.yml up --build
-```
-
-### Production
-
-1. Have a DNS record pointing at the server you run this on
-
-2. Spin up application
-
-```
-docker-compose -f production up --build
-```
+<https://flask.localhost>
 
 ## Author
 

@@ -1,0 +1,5 @@
+flask.localhost {
+    log
+    tls internal
+    reverse_proxy flask:5000
+}

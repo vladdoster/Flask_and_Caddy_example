@@ -1,9 +1,10 @@
 FROM python:3.10.0a6-slim
 
+# ENV FLASK_APP=Vx
 EXPOSE 5000
 
 WORKDIR /code
-COPY . /code
+COPY . .
 
 RUN pip install -r requirements.txt
 
