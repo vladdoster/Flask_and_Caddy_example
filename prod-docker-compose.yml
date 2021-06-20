@@ -1,5 +1,7 @@
-version: '3.1'
+version: '3.9'
+
 services:
+
   caddy:
     container_name: caddy
     image: "abiosoft/caddy:latest"
@@ -7,6 +9,7 @@ services:
       - ./production_caddyfile:/etc/local_caddyfile
     ports:
       - "443:2015"
+
   flask:
     build: .
     container_name: flask
