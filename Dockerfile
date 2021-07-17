@@ -1,4 +1,4 @@
-FROM python:3.10.0a6-slim
+FROM python:3.10.0b3-slim
 
 # ENV FLASK_APP=Vx
 EXPOSE 5000
